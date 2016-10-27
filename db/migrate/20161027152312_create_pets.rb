@@ -1,9 +1,9 @@
 class CreatePets < ActiveRecord::Migration
   def change
     create_table :pets do |t|
-      t.String :name
-      t.Integer :age
-      t.String :breed
+      t.string :name
+      t.integer :age
+      t.string :breed
 
       t.timestamps null: false
     end
